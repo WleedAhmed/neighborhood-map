@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Neighborhood Map Project</title>
+    <!--CSS-->
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <header id="header">
+      <button id="hamburger-button">
+      &#9776;</button>
+      
+      <h2>Neighborhood Map</h2>
+    </header>
+    <!-- /header -->
+    <aside>
+      <input type="text" placeholder="Location" data-bind="textInput: inputFilter">
+      <h2>Locations</h2>
+      <ul data-bind="foreach: filtered">
+        <li class="sideLocations" data-bind="text: title, click: $parent.showInfow"></li>
+      </ul>
+    </aside>
+    <!--aside-->
+    <div id="map"></div>
+    <!--begin Script-->
+    
+    <script src="js/lib/jquery-3.2.1.min.js"></script>
+    <script src="js/lib/knockout-3.4.2.js"></script>
+    <script src="js/main.js"></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAX3-iFlWXn8ReXFV00Kdnx0HETKDhprNs&v=3&callback=initiale"
+    onerror="err()">
+    </script>
+  </body>
+</html>

@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0
+}
+
+header {
+  height: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  background-color: #f07474
+}
+
+header h2 {
+  position: relative;
+  bottom: 8px;
+  float: left;
+  color: #aadaff
+}
+
+#hamburger-button {
+  float: left;
+  background-color: transparent;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  font: bold 2em 'Lobster', Arial, sans-serif;
+  border: none;
+  display: none;
+  height: 100%
+}
+
+aside {
+  position: absolute;
+  height: 100%;
+  padding-top: 100px;
+  padding-left: 10px;
+  width: 300px;
+  background-color: rgba(63, 189, 191, 0.5);
+  z-index: 1;
+  display: block
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-weight: bold
+}
+
+li {
+  cursor: pointer
+}
+
+#map {
+  position: absolute;
+  top: 50px;
+  bottom: 0;
+  left: 300px;
+  right: 0;
+  height: calc(100% - 50px)
+}
+
+@media (max-width:700px) {
+  aside {
+    display: none
+  }
+
+  #map {
+    left: 0
+  }
+
+  #hamburger-button {
+    display: block
+  }
+
+}
+
+@media (min-width:700px) {
+  aside {
+    display: block !important
+  }
+}
