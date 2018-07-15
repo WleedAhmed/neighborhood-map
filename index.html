@@ -19,8 +19,20 @@
       <input type="text" placeholder="Location" data-bind="textInput: inputFilter">
       <h2>Locations</h2>
       <ul data-bind="foreach: filtered">
-        <li class="sideLocations" data-bind="text: title, click: $parent.showInfow"></li>
+        <li class="sideLocations" data-bind="text: title, click: $parent.linkWiki"></li>
       </ul>
+      <!--wiki information-->
+<div id="wikipedia">
+          <h3 data-bind="text: wikiTitle" class="info-title"></h1>
+          <div data-bind="text: wikiSyn" id="info-body"></div>
+          <ul data-bind="foreach: wikiLinks" id="wiki">
+            <li><a data-bind="attr: {href: url, title: link}, text: link"></a></li>
+          </ul>
+        </div>
+
+
+      <!--end wiki information-->
+
     </aside>
     <!--aside-->
     <div id="map"></div>
