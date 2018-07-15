@@ -9,7 +9,7 @@
 
 To run the application:
 
-* Download or clone the repository (https://github.com/WleedAhmed/Neighborhood-Map).
+* Download or clone the repository (https://github.com/WleedAhmed/neighborhood-map).
 * Open `index.html` in your browser  
 * After running the application, You will see my neighborhood map with a set of chosen `markers`.
 * to add your own locations open `js/main.js` and add your own locations in locations array.
