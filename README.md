@@ -1,4 +1,4 @@
-#Neighborhood Map project
+# Neighborhood Map project
 
 
 * Develop a single page application featuring a map of your neighborhood or a neighborhood you would like to visit. using Google Maps APIs to feature a neighborhood map with a chosen list of markers.
@@ -20,10 +20,12 @@ To run the application:
 * JAVA SCRIPT
 * jQuery
 * KnockoutJS
+* Wikipedia API
 * Google Maps API
 
 ## Used libraries and services
 
-* [jQuery v3.2.1](https://jquery.com/)
-* [Knockout v3.4.2](http://knockoutjs.com/)
-* [Google Maps Javascript API v3.30](https://developers.google.com/maps/documentation/javascript/)
+* [jQuery](https://jquery.com/)
+* [Knockout](http://knockoutjs.com/)
+* [Wikipedia API](https://www.mediawiki.org/wiki/API:Main_page)
+* [Google Maps Javascript API](https://developers.google.com/maps/documentation/javascript/), Don't forget to use your own API key.
